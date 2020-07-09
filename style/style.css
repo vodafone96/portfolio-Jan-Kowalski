@@ -1,0 +1,688 @@
+/* font-family: 'Saira', sans-serif;
+font-family: 'Saira Condensed', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header{
+    height: 100vh;
+    background-color: #29a6dc;
+    position: relative;
+    overflow: hidden;
+}
+
+header div.welcome{
+    position: absolute;
+    margin-top: 30px;
+    text-align: center;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+}
+header h2{
+    font-family: 'saira condensed', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header h1{
+    font-family: 'saira condensed', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+header p{
+    font-family: 'saira condensed', sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+}
+header button.btn{
+    margin-top: 10px;
+    height: 32px;
+    font-family: 'saira',sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    background-color: #29a6dc;
+    color: white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    padding: 0 15px;
+    
+}
+
+
+header img{
+    position: absolute;
+    height: 60%;
+    background-position: center;
+    bottom: 0;
+    right: -20%;
+}
+
+@media (min-width: 375px){
+    header h2{
+        font-size: 50px;
+    }
+    header h1{
+    font-size: 30px;
+    }
+    header p {
+    font-size: 30px;
+    }
+    header button.btn{
+        margin-top: 20px;
+        height: 45px;
+        font-size: 15px;
+    }
+    header img{
+        right: -30%;
+    }
+}
+
+@media (min-width: 568px) and (orientation: landscape){
+    header div.welcome{
+        padding: 20px 0 0 50px;
+        text-align: left;
+    }
+    header h2{
+        font-size: 40px;
+    }
+    header h1{
+    font-size: 20px;
+    }
+    header p {
+    font-size: 20px;
+    }
+    header button.btn{
+        margin-top: 40px;
+    }
+    header img{
+        right: -5%;
+        height: 90%;
+    }
+}
+@media (min-width: 768px) and (orientation: portrait){
+    header h2{
+        font-size: 55px;
+    }
+    header h1{
+    font-size: 45px;
+    }
+    header p {
+    font-size: 45px;
+    }
+    header button.btn{
+        margin-top: 20px;
+        height: 65px;
+        font-size: 30px;
+    }
+    header img{
+        right: 0;
+    }
+}
+
+@media (min-width: 1024px) and (orientation: landscape){
+    header div.welcome{
+        margin-top: 120px;
+        z-index: 1;
+    }
+    header h2{
+        font-size: 60px;
+    }
+    header h1{
+    font-size: 40px;
+    }
+    header p {
+    font-size: 40px;
+    }
+    header button.btn{
+        height: 65px;
+        margin-top: 40px;
+        font-size: 30px;
+        transition: .3s;
+    }
+    header button.btn:hover{
+        background-color: #fff;
+        color: #29a6dc;
+        cursor: pointer;
+    }
+    header img{
+        right: -10%;
+        height: 80%;
+    }
+}
+
+@media (min-width: 1440px) and (orientation: landscape){
+    header div.welcome{
+        margin-top: 140px;
+        margin-left: 50px;
+    }
+   
+    header button.btn{
+        margin-top: 60px;
+    }
+    header img{
+        right: 0;
+        height: 90%;
+    }
+}
+
+/* Część Main - sekcja z sewisami*/
+.services{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+section.services  h1{
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'saira condensed', sans-serif ;
+    text-align: center;
+    padding: 0 20px ;
+}
+.services .service{
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+section.services div.service img{
+    display: block;
+    margin-top: 20px;
+    height: 120px;
+    /* width: 200px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+section.services div.service h2{
+    font-size: 18px;
+    font-family: 'saira condensed', sans-serif ;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 25px;
+    margin: 20px 0;
+}
+section.services div.service p{
+    font-size: 12px;
+    font-family: 'saira',sans-serif;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+@media (min-width: 360px) and (orientation: portrait){
+    section.services  h1{
+        font-size: 30px;
+        padding: 0 40px;
+        line-height: 35px;
+    }
+    .services .service{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    section.services div.service img{
+        width: 80%;
+        height: auto;
+    }
+    section.services div.service h2{
+        font-size: 25px;
+        padding: 0 40px;
+        line-height: 30px;
+    }
+    section.services div.service p{
+        font-size: 18px;
+        padding: 0 40px;   
+    }
+}
+@media (min-width: 568px) and (orientation: landscape){
+    section.services  h1{
+        font-size: 30px;
+        padding: 0 50px;
+    }
+    .services .service{
+        width: 100%;
+    }
+    section.services div.service img{
+        height: auto;
+        width: 50%;
+    }
+    section.services div.service h2{
+        font-size: 25px;
+        padding: 0 120px;
+    }
+    section.services div.service p{
+        font-size: 17px;
+        padding: 0 50px;   
+    }
+}
+@media (min-width: 1024px) and (orientation: landscape){
+    section.services  h1{
+        font-size: 45px;
+    }
+    .services .service{
+       width: 30%;
+       margin-left: 1.5%;
+       margin-right: 1.5%;
+       float: left;
+    }
+    section.services div.service img{
+        width: 100%;   
+    }
+    section.services div.service h2{
+        padding: 0;
+    }
+    section.services div.service p{
+          padding: 0; 
+    }
+}
+
+/* portfolio */
+
+section.projects{
+    background-color: #000;
+    padding-bottom: 20px;
+}
+section.projects h1{
+    color: #fff;
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'saira condensed', sans-serif ;
+    text-align: center;
+    padding: 25px 20px ;
+}
+.projects .project img{
+    width: 100%;
+}
+.projects .project .project-info
+{
+    margin: 0;
+    
+}
+.projects .project:nth-of-type(odd){
+    background-color: #ff4f2c;
+
+}
+.projects .project:nth-of-type(even){
+    background-color: #0170ba;
+
+}
+.projects .project img{
+    display: block;
+}
+.projects .project .project-info h2{
+    padding: 15px ;
+    width: 90%;
+    font-family: 'saira';
+    font-weight: normal;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 1px solid #fff;
+    
+}
+.projects .project .project-info p{
+    font-family: 'saira';
+    font-weight: normal;
+    font-size: 12px;
+    color: #fff;
+    padding: 15px 15px 25px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) and (orientation: landscape){
+    
+    section.projects h1{ 
+        font-size: 60px;
+    }
+    .projects .project{
+        width: 780px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .projects .project img{
+        width: 50%;
+        
+    }
+    .projects .project .project-info
+    {
+        margin: 0;
+        width: 50%;
+        float: right;
+    }
+    /* .projects .project img:nth-of-type(odd){
+        
+        float: left;
+    } */
+   
+    .projects .project:nth-of-type(odd) img{
+        
+        float: left;
+    }
+    .projects .project:nth-of-type(even) img{
+        
+        float: right;
+    }
+    .projects .project .project-info h2{
+        padding: 20px ;
+        width: 90%;
+        font-size: 26px;
+          
+    }
+    .projects .project:nth-of-type(even) .project-info h2{
+        width: 100%;
+        margin-left: 20px;
+        padding-left: 0;
+    }
+    .projects .project .project-info p{
+        
+        font-size: 13px;
+        margin: 0;
+        padding-bottom: 20px;
+        
+    } 
+    .projects .project:nth-of-type(even) .project-info p{
+        
+        margin-left: 20px;
+        padding-left: 0;
+    }
+}
+
+/* motto */
+section.motto{
+    height: 100vh;
+    background-image: url('../images/motto.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; 
+}
+section.motto .motto2{
+    background-color: rgba(0,63,114,0.5);
+    height: 100%;
+    position: relative;
+}
+.motto .motto2 h2{
+    font-size: 25px;
+    font-family: 'saira condensed', sans-serif ;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-top: 20vh;
+    color: #fff;
+}
+.motto .motto2 p.text{
+    font-family: 'saira', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+    padding: 0 10px;
+    margin-top: 10vh;
+}
+.motto .motto2 p.author{
+    font-family: 'saira', sans-serif;
+    font-size: 11px;
+    color: #fff;
+    margin-top: 5vh;
+    text-align: center;
+
+    
+}
+@media(min-width: 1024px){
+    .motto .motto2 h2{
+        font-size: 40px;
+        line-height: 45px;
+        padding-top: 22vh;
+        color: #fff;
+    }
+    .motto .motto2 p.text{
+        font-size: 25px;
+    }
+    .motto .motto2 p.author{
+        font-size: 15px;
+    } 
+
+}
+@media(min-width: 1280px){
+    .motto .motto2 h2{
+        font-size: 60px;
+        
+    }
+    .motto .motto2 p.text{
+        font-size: 48px;
+    }
+    .motto .motto2 p.author{
+        font-size: 24px;
+        
+    } 
+
+}
+
+/* sekcja hobby */
+
+.hobby h2{
+    font-size: 25px;
+    font-family: 'saira condensed', sans-serif ;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;  
+}
+.images .image{
+    height: 30vh;
+    
+    }
+
+.images .image:nth-of-type(1){
+    background-image: url(../images/hobby1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+    transition: 1s;
+    background-repeat: no-repeat;
+}
+.images .image:nth-of-type(2){
+    background-image: url(../images/hobby2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+    transition: 1s;
+    background-repeat: no-repeat;
+}
+.images .image:nth-of-type(3){
+    background-image: url(../images/hobby3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+    transition: 1s;
+    background-repeat: no-repeat;
+}
+.images .image:nth-of-type(4){
+    background-image: url(../images/hobby4.jpg);
+    background-position: center;
+    background-size: cover;
+    background-size: 100%;
+    transition: 1s;
+    background-repeat: no-repeat;
+}
+
+.images .image p{
+    font-family: 'saira', sans-serif;
+    background-color: rgba(255,79,44,0.4);
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    padding-top: 0;
+}
+
+@media (min-width:568px) and (orientation:landscape){
+    section.hobby{
+        font-size: 0;
+    }
+    .images .image{
+        display: inline-block;
+        width:50%;
+        height: 45vh;
+    }
+}
+
+@media (min-width:568px) and (orientation:portrait){
+    
+    .images .image p{
+        font-size: 35px;
+    }
+}
+@media (min-width:1024px) and (orientation:landscape){
+    .hobby h2{
+        font-size: 40px;
+    }
+    .images .image p{
+        background-color: rgba(255,79,44,0.5) ;
+        line-height: 45vh;
+        font-size: 30px;
+        opacity: 0;
+        transition: 0.3s;
+        
+    }
+    .images .image p:hover{
+        
+        opacity: 1;
+        color: #fff;
+        
+    }
+    
+    .images .image:hover{
+        background-size: 120%;
+    }
+
+}
+
+/* sekcja z mailem */
+
+.contact{
+    background-color: #111;
+    
+}
+.wrapp {
+    width: 100%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact h1{
+    font-family: 'saira condensed', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding-top: 20px;
+}
+.contact .wrapp form{
+    
+    font-size: 12px;
+    width: 80%;
+    font-family: 'saira', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.contact .wrapp form input{
+    display: block;
+    height: 36px;
+    width: 100%;
+    margin: 15px auto;
+    font-family: 'saira', sans-serif;
+}
+
+.contact .wrapp form textarea{
+    display: block;
+    width: 100%;
+    height: 80px;
+    margin: 15px auto;
+    font-family: 'saira', sans-serif;
+}
+.contact .wrapp form button.btn{
+    display: block;
+    height: 40px;
+    width: 100%;
+    font-family: 'saira',sans-serif;
+    font-size: 14px;
+    background-color: #111;
+    color: #fff;
+    padding: 0 15px;
+    border: 1px solid #fff;
+    margin: 15px auto;
+    text-transform: uppercase;
+}
+.contact .wrapp .socials{
+    width: 70%;
+    margin: 20px auto 0;
+    padding-bottom: 20px;
+}
+.contact .wrapp .socials .social img{
+    width: 36px;
+    display: block;
+    float: left;
+    
+}
+.contact .wrapp .socials .social{
+    font-size: 14px;
+    font-family: 'saira',sans-serif;
+    color: #fff;
+    margin: 15px 0;
+    line-height: 100%;
+}
+.contact .wrapp .socials .social span{
+    float: left;
+    line-height: 36px;
+    margin-left: 20px;
+}
+
+
+@media (min-width: 1024px){
+    .contact h1{
+        font-size: 60px;
+    }
+    .contact .wrapp{
+        margin-top: 20px;
+    }
+    .contact .wrapp form{
+        width: 50%;
+        float: left;
+        padding-left: 20px;
+    }
+    .contact .wrapp .socials{
+        float: left;
+        width: 40%;
+        margin-top: 0;
+        margin-left: 50px;
+    }
+    .contact .wrapp .socials .social{
+        display: block;
+    }
+    
+}
+
+footer p{
+    height: 10vh;
+    line-height: 10vh;
+    color: #fff;
+    font-family: 'saira',sans-serif;
+    background-color: #29a9df;
+    text-align: center;
+}
