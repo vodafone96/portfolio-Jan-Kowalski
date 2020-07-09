@@ -628,6 +628,7 @@ section.motto .motto2{
     border: 1px solid #fff;
     margin: 15px auto;
     text-transform: uppercase;
+    transition: .3s;
 }
 .contact .wrapp .socials{
     width: 70%;
@@ -665,6 +666,11 @@ section.motto .motto2{
         width: 50%;
         float: left;
         padding-left: 20px;
+    }
+    .contact .wrapp form button.btn:hover{
+        background-color: #fff;
+        color: #111;
+        cursor: pointer;
     }
     .contact .wrapp .socials{
         float: left;
